@@ -5,10 +5,10 @@
         "update_url": null
     },
     "exported_at": "2025-02-02T14:27:20+00:00",
-    "name": "Discord Tickets Bot",
+    "name": "dctickets.fi Bot",
     "author": "git@astrid.email",
     "uuid": "38e959a0-f571-45a4-9288-2a7c960fa3c5",
-    "description": "The official egg for the Discord Tickets bot.",
+    "description": "Virallinen dctickets.fi -munatiedosto.",
     "features": null,
     "docker_images": {
         "4.0 (recommended)": "ghcr.io\/discord-tickets\/bot:4.0",
@@ -48,7 +48,7 @@
         },
         {
             "name": "Database URL",
-            "description": "Leave blank if using SQLite, but SQLite is not recommended in production.\r\nhttps:\/\/discordtickets.app\/self-hosting\/configuration\/#db_connection_url",
+            "description": "Jätä tyhjäksi jos käytät SQLitea. SQLitea ei suositella tuotannossa.\r\nhttps:\/\/dctickets.fi\/self-hosting\/configuration\/",
             "env_variable": "DB_CONNECTION_URL",
             "default_value": "",
             "user_viewable": true,

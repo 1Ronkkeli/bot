@@ -31,8 +31,8 @@ services:
       - /etc/localtime:/etc/localtime:ro
     tty: true
     stdin_open: true
-    # Please refer to the documentation:
-    # https://discordtickets.app/self-hosting/configuration/#environment-variables
+    # Katso ohjeet osoitteesta:
+    # https://dctickets.fi/self-hosting/#ymparisto
     environment:
       DB_CONNECTION_URL: mysql://tickets:insecure@mysql/tickets # change `insecure` to the MYSQL_PASSWORD you set above
       DISCORD_SECRET: # required

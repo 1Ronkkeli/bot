@@ -45,10 +45,10 @@ module.exports = class ClaimSlashCommand extends SlashCommand {
 					inline: true,
 					name: getMessage('commands.slash.help.response.links.links'),
 					value: [
-						['commands', 'https://discordtickets.app/features/commands'],
-						['docs', 'https://discordtickets.app'],
-						['feedback', 'https://lnk.earth/dsctickets-feedback'],
-						['support', 'https://lnk.earth/discord'],
+                                                ['commands', 'https://dctickets.fi/komennot'],
+                                                ['docs', 'https://dctickets.fi'],
+                                                ['feedback', 'https://dctickets.fi/palaute'],
+                                                ['support', 'https://dctickets.fi/discord'],
 					]
 						.map(([l, url]) => `> [${getMessage('commands.slash.help.response.links.' + l)}](${url})`)
 						.join('\n'),
@@ -70,7 +70,7 @@ module.exports = class ClaimSlashCommand extends SlashCommand {
 					.setColor(settings.primaryColour)
 					.setTitle(getMessage('commands.slash.help.title'))
 					.setDescription(staff
-						? `**Discord Tickets v${version} by eartharoid.**`
+                                                ? `**dctickets.fi v${version}**`
 						: getMessage('commands.slash.help.response.description', { command: `</${newCommand.name}:${newCommand.id}>` }))
 					.setFields(fields),
 			],

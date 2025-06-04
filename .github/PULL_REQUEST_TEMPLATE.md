@@ -1,5 +1,5 @@
 <!--
-	Thank you for contributing to Discord Tickets.
+        Kiitos, että osallistut dctickets.fi:n kehitykseen.
 	If you haven't already, please read the CONTRIBUTING guidelines (https://github.com/discord-tickets/.github/blob/main/CONTRIBUTING.md) before creating a pull request.
 	Unless this pull request is for something minor like a fixing a typo, you should create an issue first.
 -->

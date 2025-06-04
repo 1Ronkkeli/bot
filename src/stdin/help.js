@@ -10,8 +10,8 @@ module.exports = class extends StdinCommand {
 	}
 
 	async run() {
-		this.client.log.info('Documentation:', homepage);
-		this.client.log.info('Support: https://lnk.earth/discord');
+                this.client.log.info('Dokumentaatio:', homepage);
+                this.client.log.info('Tuki: https://dctickets.fi/discord');
 		this.client.log.info('stdin commands:\n' + this.client.stdin.components.map(c => `> ${c.id}`).join('\n'));
 	}
 };

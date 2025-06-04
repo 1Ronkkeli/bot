@@ -101,7 +101,7 @@ CREATE TABLE "guilds" (
     "closeButton" BOOLEAN NOT NULL DEFAULT false,
     "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "errorColour" TEXT NOT NULL DEFAULT 'Red',
-    "footer" TEXT DEFAULT 'Discord Tickets by eartharoid',
+    "footer" TEXT DEFAULT 'dctickets.fi',
     "id" TEXT NOT NULL PRIMARY KEY,
     "locale" TEXT NOT NULL DEFAULT 'en-GB',
     "logChannel" TEXT,

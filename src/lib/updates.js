@@ -6,7 +6,7 @@ const { version: currentVersion } = require('../../package.json');
 /** @param {import("client")} client */
 module.exports = client => {
 	client.log.info('Checking for updates...');
-	fetch('https://api.github.com/repos/discord-tickets/bot/releases')
+        fetch('https://api.github.com/repos/dctickets/bot/releases')
 		.then(res => res.json())
 		.then(async json => {
 			// releases are ordered by date, so a patch for an old version could be before the latest version
@@ -19,7 +19,7 @@ module.exports = client => {
 
 			switch (compared) {
 			case -1: {
-				client.log.notice('You are running a pre-release version of Discord Tickets');
+                                client.log.notice('Käytät dctickets.fi:n esijulkaisua');
 				break;
 			}
 			case 0: {
@@ -31,12 +31,12 @@ module.exports = client => {
 				if (currentRelease === -1) return client.log.warn('Failed to find current release');
 				const behind = currentRelease;
 				currentRelease = releases[currentRelease];
-				const changelog = `https://discordtickets.app/changelogs/v${latestVersion}/`;
-				const guide = 'https://discordtickets.app/self-hosting/updating/';
+                                const changelog = `https://dctickets.fi/changelogs/v${latestVersion}/`;
+                                const guide = 'https://dctickets.fi/paivitys/';
 				const { default: boxen } = await import('boxen');
 
-				client.log.notice(
-					short('&r&6A new version of Discord Tickets is available (&c%s&6 -> &a%s&6)&r\n'),
+                                client.log.notice(
+                                        short('&r&6Uusi versio saatavilla (&c%s&6 -> &a%s&6)&r\n'),
 					currentVersion,
 					latestVersion,
 					boxen(
