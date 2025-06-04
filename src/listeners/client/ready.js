@@ -28,7 +28,7 @@ module.exports = class extends Listener {
 		/** @type {import("client")} */
 		const client = this.client;
 
-		// process.title = `"[Discord Tickets] ${client.user.tag}"`; // too long and gets cut off
+                // process.title = `"[dctickets.fi] ${client.user.tag}"`; // liian pitkä ja katkeaa
 		process.title = 'tickets';
 		client.log.success('Connected to Discord as "%s" over %d shards', client.user.tag, client.ws.shards.size);
 

@@ -56,8 +56,8 @@ module.exports = class Client extends FrameworkClient {
 				locales[name] = YAML.parse(data);
 			});
 
-		/** @type {I18n} */
-		this.i18n = new I18n('en-GB', locales);
+                /** @type {I18n} */
+                this.i18n = new I18n('fi', locales);
 
 		// to maintain references, these shouldn't be reassigned
 		Object.assign(this.config, YAML.parse(fs.readFileSync('./user/config.yml', 'utf8')));

@@ -1,8 +1,8 @@
 {
-	"name": "discord-tickets",
+        "name": "dctickets-bot",
 	"version": "4.0.38",
 	"private": "true",
-	"description": "The most popular open-source ticket management bot for Discord.",
+        "description": "Avoimen lähdekoodin tikettibotti Discordiin.",
 	"main": "src/",
 	"scripts": {
 		"db.dump": "node scripts/dump.mjs",
@@ -30,10 +30,10 @@
 			"npm run lint --"
 		]
 	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/discord-tickets/bot.git"
-	},
+        "repository": {
+                "type": "git",
+                "url": "git+https://dctickets.fi/bot.git"
+        },
 	"keywords": [
 		"discord",
 		"tickets",
@@ -41,10 +41,10 @@
 	],
 	"author": "eartharoid",
 	"license": "GPL-3.0-or-later",
-	"bugs": {
-		"url": "https://github.com/discord-tickets/bot/issues"
-	},
-	"homepage": "https://discordtickets.app",
+        "bugs": {
+                "url": "https://dctickets.fi/issues"
+        },
+        "homepage": "https://dctickets.fi",
 	"engines": {
 		"node": ">=18"
 	},

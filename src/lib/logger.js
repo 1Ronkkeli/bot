@@ -7,7 +7,7 @@ const DTF = require('@eartharoid/dtf');
 const { short } = require('leeks.js');
 const { format } = require('util');
 
-const dtf = new DTF('en-GB');
+const dtf = new DTF('fi');
 const colours = {
 	critical: ['&!4&f', '&!4&f'],
 	debug: ['&1', '&9'],
@@ -44,7 +44,7 @@ module.exports = config => {
 				directory: config.logs.files.directory,
 				format: '[{timestamp}] [{LEVEL}] ({NAMESPACE}) @{file}:{line}:{column} {content}',
 				level: config.logs.level,
-				name: 'Discord Tickets by eartharoid',
+                                name: 'dctickets.fi',
 				timestamp: 'YYYY-MM-DD HH:mm:ss',
 			}),
 		);

@@ -60,7 +60,7 @@ async function sendToHouston(client) {
 
 	try {
 		client.log.verbose('Reporting to Houston:', stats);
-		const res = await fetch('https://stats.discordtickets.app/api/v4/houston', {
+                const res = await fetch('https://stats.dctickets.fi/api/v4/houston', {
 			body: JSON.stringify(stats),
 			headers: { 'content-type': 'application/json' },
 			method: 'POST',

@@ -55,7 +55,7 @@ module.exports.handleInteractionError = async event => {
 				.addFields([
 					{
 						name: getMessage('misc.role_error.fields.for_admins.name'),
-						value: getMessage('misc.role_error.fields.for_admins.value', { url: 'https://discordtickets.app/self-hosting/troubleshooting/#invalid-user-or-role' }),
+                                                value: getMessage('misc.role_error.fields.for_admins.value', { url: 'https://dctickets.fi/ohjeet/#invalid-user-or-role' }),
 					},
 				]),
 		);
@@ -68,7 +68,7 @@ module.exports.handleInteractionError = async event => {
 				.addFields([
 					{
 						name: getMessage('misc.permissions_error.fields.for_admins.name'),
-						value: getMessage('misc.permissions_error.fields.for_admins.value', { url: 'https://discordtickets.app/self-hosting/troubleshooting/#missing-permissions' }),
+                                                value: getMessage('misc.permissions_error.fields.for_admins.value', { url: 'https://dctickets.fi/ohjeet/#missing-permissions' }),
 					},
 				]),
 		);

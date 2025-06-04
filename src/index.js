@@ -1,5 +1,5 @@
 /**
- * Discord Tickets
+ * dctickets.fi
  * Copyright (C) 2022 Isaac Saunders
  *
  * This program is free software: you can redistribute it and/or modify
@@ -15,8 +15,8 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  *
- * @name discord-tickets/bot
- * @description An open-source Discord bot for ticket management
+ * @name dctickets.fi/bot
+ * @description Avoimen lähdekoodin tikettibotti Discordiin
  * @copyright 2022 Isaac Saunders
  * @license GNU-GPLv3
  */
@@ -47,7 +47,7 @@ if (base_dir !== cwd) {
 	}
 	console.log('  Base directory:    ' + colours.gray(base_dir));
 	console.log('  Current directory: ' + colours.gray(cwd));
-	console.log(colours.blueBright('  Learn more at https://lnk.earth/dt-cwd.'));
+        console.log(colours.blueBright('  Lisätietoja: https://dctickets.fi')); 
 }
 
 process.env.NODE_ENV ??= 'production'; // make sure NODE_ENV is set
@@ -73,7 +73,7 @@ process.on('SIGTERM', () => exit('SIGTERM'));
 process.on('SIGINT', () => exit('SIGINT'));
 
 process.on('uncaughtException', (error, origin) => {
-	log.notice(`Discord Tickets v${pkg.version} on Node.js ${process.version} (${process.platform})`);
+        log.notice(`dctickets.fi v${pkg.version} on Node.js ${process.version} (${process.platform})`);
 	log.warn(origin === 'uncaughtException' ? 'Uncaught exception' : 'Unhandled promise rejection' + ` (${error.name})`);
 	log.error(error);
 });
